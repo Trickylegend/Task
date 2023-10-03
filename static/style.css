@@ -1,0 +1,152 @@
+html {
+    background-color: #FEFFFF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3AAFA9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#editInput {
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+#addTaskBtn {
+    background-color: #17252A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.helpButton {
+    margin: 1%;
+}
+
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    background-color: #DEF2F1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.styled-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+span {
+    flex: 1;
+    word-wrap: break-word;
+}
+
+#editInput {
+    flex: 1;
+    word-wrap: break-word;
+    background-color: #C1C8E4;
+}
+
+input {
+    /* margin-right: 5%; */
+    width: 100%;
+    background-color: #DEF2F1;
+}
+button {
+    background-color: #17252A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+button.save-btn {
+    background-color: #28a745;
+    margin-right: 0;
+
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .input-container {
+        flex-direction: column;
+    }
+    
+    #taskInput {
+        flex: none;
+        width: 100%;
+    }
+    
+    #addTaskBtn {
+        width: 100%;
+    }
+    
+    li {
+        flex-direction: column;
+    }
+    
+    .styled-checkbox {
+        margin-right: 0;
+    }
+    
+    button {
+        width: 70%;
+        margin: 5%;
+        margin-right: 0;
+    }
+}
